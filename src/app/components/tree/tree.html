@@ -1,0 +1,9 @@
+
+<p>
+    @if (nodes$ | async; as nodes) {
+        First Names:
+        @for (node of (nodes); track node) {
+            {{ node.firstName }}
+        }
+    }
+</p>
